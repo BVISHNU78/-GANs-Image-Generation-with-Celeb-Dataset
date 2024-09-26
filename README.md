@@ -22,3 +22,15 @@ The discriminator takes an image as input, and tries to classify it as "real" or
 Generator Network¶
 The generator part of a GAN learns to create fake data by incorporating feedback from the discriminator. It learns to make the discriminator classify its output as real.
 
+Here are the steps involved in training the discriminator.
+
+We expect the discriminator to output 1 if the image was picked from the real Anime Faces dataset, and 0 if it was generated using the generator network.
+
+We first pass a batch of real images, and compute the loss, setting the target labels to 1.
+
+Then we pass a batch of fake images (generated using the generator) pass them into the discriminator, and compute the loss, setting the target labels to 0.
+
+Finally we add the two losses and use the overall loss to perform gradient descent to adjust the weights of the discriminator.
+
+It's important to note that we don't change the weights of the generator model while training the discriminator (opt_d only affects the discriminator.parameters())
+
