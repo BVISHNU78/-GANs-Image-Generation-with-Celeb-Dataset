@@ -34,3 +34,4 @@ Finally we add the two losses and use the overall loss to perform gradient desce
 
 It's important to note that we don't change the weights of the generator model while training the discriminator (opt_d only affects the discriminator.parameters())
 
+![Screenshot 2024-09-09 091804](https://github.com/user-attachments/assets/a1f63515-579d-452a-8c6d-9c544b25a3d9)
