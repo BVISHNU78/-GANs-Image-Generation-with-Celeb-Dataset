@@ -33,7 +33,7 @@ Then we pass a batch of fake images (generated using the generator) pass them in
 
 Finally we add the two losses and use the overall loss to perform gradient descent to adjust the weights of the discriminator.
 
-It's important to note that we don't change the weights of the generator model while training the dis
+It's important to note that we don't change the weights of the generator model while training the 
 ![generated-images-0831](https://github.com/user-attachments/assets/9161324a-f01e-4f36-adb9-68bcd4422330)
-criminator (opt_d only affects the discriminator.parameters())
+discriminator (opt_d only affects the discriminator.parameters())
 
