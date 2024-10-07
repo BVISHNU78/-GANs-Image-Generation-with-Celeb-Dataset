@@ -37,4 +37,3 @@ It's important to note that we don't change the weights of the generator model w
 ![generated-images-0831](https://github.com/user-attachments/assets/9161324a-f01e-4f36-adb9-68bcd4422330)
 criminator (opt_d only affects the discriminator.parameters())
 
-![Screenshot 2024-09-09 091804](https://github.com/user-attachments/assets/a1f63515-579d-452a-8c6d-9c544b25a3d9)
