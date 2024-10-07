@@ -28,10 +28,13 @@ We expect the discriminator to output 1 if the image was picked from the real An
 
 We first pass a batch of real images, and compute the loss, setting the target labels to 1.
 
-Then we pass a batch of fake images (generated using the generator) pass them into the discriminator, and compute the loss, setting the target labels to 0.
+Then we pass a batch of fake images (generated using the generator) pass them into![generated-images-0733](https://github.com/user-attachments/assets/57ba0483-9994-4a3a-8028-5331a38cf516)
+ the discriminator, and compute the loss, setting the target labels to 0.
 
 Finally we add the two losses and use the overall loss to perform gradient descent to adjust the weights of the discriminator.
 
-It's important to note that we don't change the weights of the generator model while training the discriminator (opt_d only affects the discriminator.parameters())
+It's important to note that we don't change the weights of the generator model while training the dis
+![generated-images-0831](https://github.com/user-attachments/assets/9161324a-f01e-4f36-adb9-68bcd4422330)
+criminator (opt_d only affects the discriminator.parameters())
 
 ![Screenshot 2024-09-09 091804](https://github.com/user-attachments/assets/a1f63515-579d-452a-8c6d-9c544b25a3d9)
